@@ -1,0 +1,112 @@
+.carts, #side #cart{
+   .cart_title {
+     font: 120% bold;
+   }
+  
+   .item_price, .total_line {
+     text-align: right;
+   }
+  
+   .total_line .total_cell {
+     font-weight: bold;
+     border-top: 1px solid #595;
+   }
+   input[type="submit"]{
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding:5px 15px; /*add some padding to the inside of the button*/
+    background:#1090DA; /*the colour of the button*/
+    border:1px solid #2AA7EF; /*required or the default border for the browser will appear*/
+    /*give the button curved corners, alter the size as required*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*give the button a drop shadow*/
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#f3f3f3;
+    font-size:1.1em;
+  }
+  /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+  input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:focus{
+    background-color :#0C679D; /*make the background a little darker*/
+    /*reduce the drop shadow size to give a pushed button effect*/
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+  }
+  button{
+    margin: 0px 1px 5px 5px;
+  }
+}
+.box-cart{
+  table{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    border-width: 1px 0px 1px 1px;
+    border-bottom: none;
+    border-top-color: #e3e3e3;
+    th{
+      padding: 10px;
+      border-right: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      text-align: center;
+      white-space: nowrap;
+      font-weight: bold;
+      background-color: #eee;
+      .right{
+        text-align: right;
+      }
+      .left{
+        text-align: left;
+      }
+      .center{
+        text-align: center;
+      }
+    }
+    th.quantity{
+      width:80px;
+    }
+    tr{
+      background-color: #fff;
+      background-color: transparent;
+    }
+    td{
+      text-align: center !important ;
+      padding: 8px 5px;
+      border-right: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      input#quantity{
+        width: 70px;
+        background-color: transparent;
+      }
+    }
+    td.xoasp{
+      padding: 0px;
+      margin: 0px;
+      text-align: center !important;
+    }
+  }
+}
+
+input.search{
+  background-color: transparent;
+}
+.main{
+  table{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    tr.cart-views{
+      background-color: #fff;
+      background-color: transparent;
+    }
+    td{
+      text-align: left !important ;
+      padding: 8px 5px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// .popup-warp{
+// 	display: none;
+// 	border: 1px solid #000;
+// 	width: 220px;
+// 	height: 250px;
+// 	.popup-content{
+// 	    padding: 5px;
+// 	}
+// 	.popup-title{
+//     background: #000;
+//     color: #fff;
+//     text-transform: uppercase;
+//     padding: 5px;
+// 	}
+// 	$ -> 
+//   $('.box-product').mouseover ->  
+//     $(this).find('.popup-warp').css({'display':'block'})
+//   $('.box-product').mouseleave ->  
+//     $(this).find('.popup-warp').css({'display':'none'})
+// }
+
+
+.box-product{
+	.entry{
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0 0 4px rgba(0,0,0,0.5);
+		border:1px solid grey;
+	   	float:left;
+		margin-left: 10px;
+		margin-bottom: 30px;
+		padding: 15px 20px;
+		word-wrap: break-word;
+		width: 250px;
+		height: 300px;
+		text-align: center;	
+		p{
+			color: white;
+			font-size:1.25em;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 2em;
+			height:288px;
+			width: 100%;
+			opacity: 0;
+			-webkit-transform: translate3d(40px,40px,0);
+			transform: translate3d(40px,40px,0);
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			button{
+				position: absolute;
+				bottom: 7%;
+				left: 28%;
+				font-size:0.8em;
+			}
+		}
+		input{
+			cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+			padding:5px 15px; /*add some padding to the inside of the button*/
+			background:#1090DA; /*the colour of the button*/
+			border:1px solid #2AA7EF; /*required or the default border for the browser will appear*/
+			/*give the button curved corners, alter the size as required*/
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			/*give the button a drop shadow*/
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			/*style the text*/
+			color:#f3f3f3;
+			font-size:1.1em;
+		}
+		/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+		input:hover, input:focus{
+			background-color :#0C679D; /*make the background a little darker*/
+			/*reduce the drop shadow size to give a pushed button effect*/
+			-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			box-shadow: 0 0 1px rgba(0,0,0, .75);
+		}
+	}
+	.entry:hover p{
+		background: rgba(0,0,0,0.6);
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+
+	}
+}

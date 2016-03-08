@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    = yield :title
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  |  <body class="
+  = controller.controller_name
+  | ">
+
+  =render "partials/navbar"
+  .container
+
+    #columns
+      #side
+        - if @cart
+          |  <div id="cart" 
+          - if @cart.line_items.empty?
+             |  style="display: none" 
+          |  > 
+
+          = render @cart
+
+    .display_cart
+        .sho
+          button.sho[type="button"]
+            | Show 
+        .hid
+          button.hid[type="button"]
+            | Hide 
+           
+  .content
+    .danhmuc.col-md-2
+        ul.list-unstyled.menu
+          li.menuitem.test1
+            a[href="#"]
+              | Sản phẩm 1                                  
+          li.menuitem.test2
+            a[href="#"]
+              | Sản phẩm 2               
+          li.menuitem.test3
+            a[href="#"]
+              | Sản phẩm 3                  
+          li.menuitem.test4
+            a[href="#"]
+              | Sản phẩm 4    
+
+    / .sub-cate            
+    /   p
+    /     | i'm hidden
+    .slide.col-sm-offset-2
+        =render "partials/slide"
+
+  .main
+    = yield 
+    
+  footer.footer
+    .col-sm-6.col-sm-offset-3.footer
+      p.text-muted
+        | Copyright &copy by kaina 2015
+
+
+    
+= javascript_include_tag 'application', 'data-turbolinks-track' => true

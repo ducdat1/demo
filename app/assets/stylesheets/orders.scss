@@ -1,0 +1,57 @@
+// Place all the styles related to the orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.depot_form{
+	fieldset{
+		form{
+			table{
+			  	width: 80%;
+			    margin-top: 10px;
+			    margin-bottom: 20px;
+			    border: 0px solid #ebebeb;
+			    border-width: none;
+			    border-bottom: none;
+			    border-top-color: #e3e3e3;	
+				tr{
+				background-color: #fff;
+	      		background-color: transparent;
+	      		}	
+				td{		
+			      text-align: left !important ;
+			      padding: 8px 5px;
+			      // border-right: 1px solid #e3e3e3;
+			      // border-bottom: 1px solid #e3e3e3;
+				}
+			}
+			.actions{
+				float: left;
+				input[type=submit]{
+					cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+				    padding:5px 15px; /*add some padding to the inside of the button*/
+				    background:#1090DA; /*the colour of the button*/
+				    border:1px solid #2AA7EF; /*required or the default border for the browser will appear*/
+				    /*give the button curved corners, alter the size as required*/
+				    -moz-border-radius: 10px;
+				    -webkit-border-radius: 10px;
+				    border-radius: 10px;
+				    /*give the button a drop shadow*/
+				    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+				    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+				    box-shadow: 0 0 4px rgba(0,0,0, .75);
+				    /*style the text*/
+				    color:#f3f3f3;
+				    font-size:1.1em;
+				  }
+			
+				  input[type="submit"]:hover, input[type="submit"]:focus{
+				    background-color :#0C679D; /*make the background a little darker*/
+				    /*reduce the drop shadow size to give a pushed button effect*/
+				    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+				    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+				    box-shadow: 0 0 1px rgba(0,0,0, .75);
+				  }
+				
+			}
+		}
+	}
+}
