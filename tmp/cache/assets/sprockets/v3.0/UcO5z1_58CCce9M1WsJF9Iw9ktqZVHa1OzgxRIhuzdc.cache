@@ -1,0 +1,23 @@
+I"(function() {
+  $(function() {
+    $('.entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+    return $('entry > .price_line > input').click(function() {
+      return $('#side').css({
+        'display': 'block'
+      });
+    });
+  });
+
+  $(function() {
+    $('button.xem').click(function() {
+      return $('#side').hide("fast", "linear");
+    });
+    return $('button.hien').click(function() {
+      return $('#side').show("fast", "linear");
+    });
+  });
+
+}).call(this);
+:ET

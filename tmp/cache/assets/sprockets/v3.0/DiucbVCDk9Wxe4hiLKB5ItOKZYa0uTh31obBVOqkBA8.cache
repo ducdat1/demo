@@ -1,0 +1,22 @@
+I".(function() {
+  $(function() {
+    $('.box-img').hover(function() {
+      return $(this).parent().find('p').css({
+        'background': 'rgba(0,0,0,0.6)',
+        'opacity': '1',
+        '-webkit-transform': 'translate3d(0,0,0)',
+        'transform': 'translate3d(0,0,0)'
+      });
+    });
+    return function() {
+      return $(this).parent().find('p').css({
+        'background': 'none',
+        'opacity': '0',
+        '-webkit-transform': 'translate3d(40px,40px,0)',
+        'transform': 'translate3d(40px,40px,0)'
+      });
+    };
+  });
+
+}).call(this);
+:ET

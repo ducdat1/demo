@@ -1,0 +1,13 @@
+I"8(function() {
+  $(function() {
+    $('.entry > img').click(function() {
+      $(this).parent().find(':submit').click();
+      return $('#side').show("fast", "linear");
+    });
+    return $('#side > #cart > button').click(function() {
+      return $('#side').hide("fast", "linear");
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,18 @@
+I"‚(function() {
+  $(function() {
+    return $('.entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+  });
+
+  $(function() {
+    $('button.xem').click(function() {
+      return $('#side').hide("fast", "linear");
+    });
+    return $('button.hien').click(function() {
+      return $('#side').show("fast", "linear");
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,14 @@
+I">(function() {
+  $(function() {
+    return $('.box-img').hover(function() {
+      return $(this).parents.find('p').css({
+        'background': 'rgba(0,0,0,0.6)',
+        'opacity': '1',
+        '-webkit-transform': 'translate3d(0,0,0)',
+        'transform': 'translate3d(0,0,0)'
+      });
+    });
+  });
+
+}).call(this);
+:ET

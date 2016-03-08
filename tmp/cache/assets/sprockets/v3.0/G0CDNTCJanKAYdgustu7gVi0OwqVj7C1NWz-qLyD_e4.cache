@@ -1,0 +1,11 @@
+I"²(function() {
+  $(function() {
+    return $('li.menuitem').hover(function() {
+      return $('.subcate').css({
+        'display': 'block'
+      });
+    });
+  });
+
+}).call(this);
+:ET

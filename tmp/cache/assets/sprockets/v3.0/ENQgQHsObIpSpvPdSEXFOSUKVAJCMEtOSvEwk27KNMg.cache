@@ -1,0 +1,9 @@
+I"¤(function() {
+  $(function() {
+    return $('.entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+  });
+
+}).call(this);
+:ET

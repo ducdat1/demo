@@ -1,0 +1,17 @@
+I"d(function() {
+  $(function() {
+    $('.entry > img').click(function() {
+      $(this).parent().find(':submit').click();
+      return $('#side').css({
+        'display': 'block'
+      });
+    });
+    return $('.entry > .price_line > input').click(function() {
+      return $('#side').css({
+        'display': 'block'
+      });
+    });
+  });
+
+}).call(this);
+:ET

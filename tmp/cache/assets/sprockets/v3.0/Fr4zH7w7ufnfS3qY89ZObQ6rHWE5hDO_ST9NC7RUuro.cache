@@ -1,0 +1,12 @@
+I"à(function() {
+  $(function() {
+    return $('.entry > img').click(function() {
+      $(this).parent().find(':submit').click();
+      return $('#side').css({
+        'display': 'block'
+      });
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,10 @@
+I"Í(function() {
+  $(function() {
+    return $('.entry > img').click(function() {
+      $(this).parent().find(':submit').click();
+      return $('#side').show("fast", "linear");
+    });
+  });
+
+}).call(this);
+:ET

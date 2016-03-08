@@ -1,0 +1,17 @@
+I"j(function() {
+  $(function() {
+    $('.box-img').hover(function() {
+      return $(this).parent().find('p').css({
+        'background': 'rgba(0,0,0,0.6)',
+        'opacity': '1',
+        '-webkit-transform': 'translate3d(0,0,0)',
+        'transform': 'translate3d(0,0,0)'
+      });
+    });
+    return function() {
+      return fale;
+    };
+  });
+
+}).call(this);
+:ET

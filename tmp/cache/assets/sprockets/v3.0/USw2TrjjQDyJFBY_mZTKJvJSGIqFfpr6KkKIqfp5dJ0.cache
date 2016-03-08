@@ -1,0 +1,38 @@
+I"î(function() {
+  $(function() {
+    return $('.entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+  });
+
+  $(function() {
+    $('.entry > img').click(function() {
+      return $('#side').show("fast", "linear");
+    });
+    $('.entry > .price_line > form.button_to > input').click(function() {
+      return $('#side').show("fast", "linear");
+    });
+    $('button.hid').click(function() {
+      return $('#side').hide("fast", "linear");
+    });
+    $('button.hid').click(function() {
+      return $('.sho').show("fast", "linear");
+    });
+    $('button.hid').click(function() {
+      return $('.hid').hide("fast", "linear");
+    });
+    $('button.sho').click(function() {
+      return $('#side').show("fast", "linear");
+    });
+    $('button.sho').click(function() {
+      return $('.sho').css({
+        'dsiplay': 'none'
+      });
+    });
+    return $('button.sho').click(function() {
+      return $('.hid').show("fast", "linear");
+    });
+  });
+
+}).call(this);
+:ET
