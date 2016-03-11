@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: adminSw6ANwz
   password: SEkm6bCFhu1p
-  host: localhost
+  host: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
 
 development:
   <<: *default
